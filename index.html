@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinheria Agnello</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body>
-    <h1>Vinheria Agnello</h1>
+
+<body id="grad">
+    <h1 class="corBranca">Vinheria Agnello</h1>
     <hr>
-    <p>Neste projeto irá conter em <strong>JS</strong> um sistema de caddastro de vinhos, com o limite sendo de 5 vinhos. O usuário vai poder digitar o <strong>nome</strong> do vinho, a <strong>quantidade</strong> em estoque do vinho escolhido e a sua <strong>safra</strong>. Após a conclusão de um cadastro será mostrado um alerta com as informações do mesmo, contendo:
-        <ul>
-            <li>O vinho cadastrado.</li>
-            <li>Tipo.</li>
-            <li>Safra.</li>
-            <li>Quantidade.</li>
-            <li>Alerta sobre a condição do estoque.</li>
-        </ul>
-        E também um relatório final do estoque, contendo:
-            <ul>
-                <li>Total de cadastros realizados</li>
-                <li>Total de vinhos com estoque baixo</li>
-                <li>Vinho mais antigo(com a safra)</li>
-            </ul>
+    <p class="corBranca">Neste projeto irá conter em JS um sistema de caddastro de vinhos, com o limite sendo de 5
+        vinhos. O usuário vai poder digitar o nome do vinho, a quantidade em estoque do vinho escolhido e a sua safra.
+        Após a conclusão de um cadastro será mostrado um alerta com as informações do mesmo, contendo:
     </p>
+    <ul class="corBranca">
+        <li>O vinho cadastrado.</li>
+        <li>Tipo.</li>
+        <li>Safra.</li>
+        <li>Quantidade.</li>
+        <li>Alerta sobre a condição do estoque.</li>
+    </ul>
+    <p class="corBranca">E também um relatório final do estoque, contendo:</p>
+    <ul class="corBranca">
+        <li>Total de cadastros realizados</li>
+        <li>Total de vinhos com estoque baixo</li>
+        <li>Vinho mais antigo(com a safra)</li>
+    </ul>
+    <br><br>
+    <hr>
+
+    <h2 class="corBranca">Inicie seu cadastro aqui:</h2>
     <main>
         <section>
             <button onclick="iniciarSistema()">Iniciar Cadastro</button>
         </section>
     </main>
-
-
+    <br>
+    <hr>
+    <h1 class="corBranca">Lista de Vinhos</h1>
+    <br>
+    <hr>
+    <div id="lista-cadastros"></div>
+    <br>
 
 
     <script src="src/js/script.js"></script>
 </body>
+
 </html>

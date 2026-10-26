@@ -111,4 +111,54 @@ function iniciarSistema() {
     let relatorioResultado = `Relatório Final do Estoque:\nTotal de cadastros realizados: ${totalCadastros}\nTotal de vinhos com estoque baixo: ${totalEstoqueBaixo}\nVinho mais antigo: ${vinhoMaisAntigoNome} (Safra: ${menorSafra})`;
     console.log(relatorioResultado);
     alert(relatorioResultado);
+
+    const cadastros = [
+        {
+            nome: nome1,
+            safra: safra1,
+            quantidade: quant1,
+            tipo: classificarVinho(safra1)
+        },
+        {
+            nome: nome2,
+            safra: safra2,
+            quantidade: quant2,
+            tipo: classificarVinho(safra2)
+        },
+        {
+            nome: nome3,
+            safra: safra3,
+            quantidade: quant3,
+            tipo: classificarVinho(safra3)
+        },
+        {
+            nome: nome4,
+            safra: safra4,
+            quantidade: quant4,
+            tipo: classificarVinho(safra4)
+        },
+        {
+            nome: nome5,
+            safra: safra5,
+            quantidade: quant5,
+            tipo: classificarVinho(safra5)
+        }
+    ];
+    let caixaCadastro = document.getElementById("lista-cadastros");
+    if (caixaCadastro){
+        caixaCadastro.innerHTML = "";
+        cadastros.forEach((cadastro) => {
+            if (cadastro.nome !== "") {
+                caixaCadastro.innerHTML += `
+                    <div class='card'>
+                        <h2>${cadastro.nome}</h2>
+                        <p><strong>Safra:</strong> ${cadastro.safra}</p>
+                        <p><strong>Quantidade:</strong> ${cadastro.quantidade}</p>
+                        <p><strong>Tipo:</strong> ${cadastro.tipo}</p>
+                        <hr>
+                    </div>
+                `;
+            }
+        });
+    }
 }
