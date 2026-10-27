@@ -28,3 +28,8 @@ Estoque: [condição]
 ## Como usar
 
 Abra o arquivo `index.html` no navegador.
+
+
+
+## Link GitHub Pages: 
+https://luizfelipecc.github.io/vinheria-agnello-checkpoint02/
